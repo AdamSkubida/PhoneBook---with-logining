@@ -58,7 +58,6 @@ export const UserMenu = () => {
           textAlign="center"
           sx={{
             mr: 2,
-            // Ciekawostka w MUI - dla widoku telefonu (XS) sie nie wyswietla, dla wiekszych widokow jako flex
             display: { xs: 'none', md: 'flex' },
             color: 'inherit',
             textDecoration: 'none',

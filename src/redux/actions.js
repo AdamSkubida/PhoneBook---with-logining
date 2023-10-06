@@ -20,7 +20,7 @@ export const register = createAsyncThunk(
       return response.data;
     } catch (error) {
       alert('Wrong data - please use other!');
-      console.log(error, 'errror');
+      console.log(error, 'error');
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -35,7 +35,7 @@ export const logIn = createAsyncThunk(
       return response.data;
     } catch (error) {
       alert('Wrong data - please use other!');
-      console.log(error, 'errror');
+      console.log(error, 'error');
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -65,7 +65,7 @@ export const logOut = createAsyncThunk('AUTH/LOG_OUT', async (_, thunkAPI) => {
     clearToken();
     return response.data;
   } catch (error) {
-    console.log(error, 'errror');
+    console.log(error, 'error');
     return thunkAPI.rejectWithValue(error.message);
   }
 });
@@ -82,7 +82,7 @@ export const fetchContacts = createAsyncThunk(
       console.log(data, 'data');
       return data;
     } catch (error) {
-      console.log(error, 'errror');
+      console.log(error, 'error');
       return thunkAPI.rejectWithValue(error.message);
     }
   }

@@ -26,7 +26,7 @@ export const Home = () => {
         color="text.secondary"
         component="p"
       >
-        This is Julita's phonebook web application. You are{' '}
+        This is Adam's phonebook web application. You are{' '}
         {isLogged
           ? 'logged in. Check contacts page to manage your phonebook.'
           : 'logged out. Please sign in or register to use this page.'}

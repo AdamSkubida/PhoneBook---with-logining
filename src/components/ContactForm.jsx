@@ -21,14 +21,9 @@ export const ContactForm = () => {
 
     dispatch(addContact({ name: contact.name, number: contact.number }));
 
-    // zresetuje cały formularz po wysłaniu
     setContact(prev => ({ ...INITIAL_STATE }));
-    //albo do resetu
-    //const form =event.target;
-    //form.reset()
   };
 
-  // zeby mona bylo zmienić wartość inputa
   const handleChange = e => {
     const { name, value } = e.target;
 

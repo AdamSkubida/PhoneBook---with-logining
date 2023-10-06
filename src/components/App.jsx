@@ -15,8 +15,12 @@ export const App = () => {
   const isLogged = useSelector(selectLoggedIn);
 
   useEffect(() => {
-    dispatch(refreshUser());
-  }, [dispatch]);
+    if (isLogged) {
+      dispatch(refreshUser());
+    } else {
+      return;
+    }
+  }, [isLogged, dispatch]);
   return (
     <div>
       <Routes>
